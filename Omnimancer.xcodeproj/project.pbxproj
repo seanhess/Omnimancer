@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78AA334E1714BB1D00F1DEC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA334D1714BB1D00F1DEC1 /* UIKit.framework */; };
+		78AA33501714BB1D00F1DEC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA334F1714BB1D00F1DEC1 /* Foundation.framework */; };
+		78AA33521714BB1D00F1DEC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA33511714BB1D00F1DEC1 /* CoreGraphics.framework */; };
+		78AA33541714BB1D00F1DEC1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA33531714BB1D00F1DEC1 /* GLKit.framework */; };
+		78AA33561714BB1D00F1DEC1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA33551714BB1D00F1DEC1 /* OpenGLES.framework */; };
+		78AA335C1714BB1D00F1DEC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78AA335A1714BB1D00F1DEC1 /* InfoPlist.strings */; };
+		78AA335E1714BB1D00F1DEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA335D1714BB1D00F1DEC1 /* main.m */; };
+		78AA33621714BB1D00F1DEC1 /* OMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA33611714BB1D00F1DEC1 /* OMAppDelegate.m */; };
+		78AA33641714BB1D00F1DEC1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33631714BB1D00F1DEC1 /* Default.png */; };
+		78AA33661714BB1D00F1DEC1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33651714BB1D00F1DEC1 /* Default@2x.png */; };
+		78AA33681714BB1D00F1DEC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33671714BB1D00F1DEC1 /* Default-568h@2x.png */; };
+		78AA336B1714BB1D00F1DEC1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33691714BB1D00F1DEC1 /* MainStoryboard_iPhone.storyboard */; };
+		78AA336E1714BB1D00F1DEC1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA336C1714BB1D00F1DEC1 /* MainStoryboard_iPad.storyboard */; };
+		78AA33701714BB1D00F1DEC1 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 78AA336F1714BB1D00F1DEC1 /* Shader.fsh */; };
+		78AA33721714BB1D00F1DEC1 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33711714BB1D00F1DEC1 /* Shader.vsh */; };
+		78AA33751714BB1D00F1DEC1 /* OMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA33741714BB1D00F1DEC1 /* OMViewController.m */; };
+		78AA337D1714BB1D00F1DEC1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA337C1714BB1D00F1DEC1 /* SenTestingKit.framework */; };
+		78AA337E1714BB1D00F1DEC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA334D1714BB1D00F1DEC1 /* UIKit.framework */; };
+		78AA337F1714BB1D00F1DEC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA334F1714BB1D00F1DEC1 /* Foundation.framework */; };
+		78AA33871714BB1D00F1DEC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78AA33851714BB1D00F1DEC1 /* InfoPlist.strings */; };
+		78AA338A1714BB1D00F1DEC1 /* OmnimancerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA33891714BB1D00F1DEC1 /* OmnimancerTests.m */; };
+		78AA33961714BF8F00F1DEC1 /* OMBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA33951714BF8F00F1DEC1 /* OMBox.m */; };
+		78AA33991714C05D00F1DEC1 /* OMShard.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA33981714C05D00F1DEC1 /* OMShard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78AA33801714BB1D00F1DEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78AA33421714BB1D00F1DEC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AA33491714BB1D00F1DEC1;
+			remoteInfo = Omnimancer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78AA334A1714BB1D00F1DEC1 /* Omnimancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omnimancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AA334D1714BB1D00F1DEC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		78AA334F1714BB1D00F1DEC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78AA33511714BB1D00F1DEC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		78AA33531714BB1D00F1DEC1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		78AA33551714BB1D00F1DEC1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		78AA33591714BB1D00F1DEC1 /* Omnimancer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Omnimancer-Info.plist"; sourceTree = "<group>"; };
+		78AA335B1714BB1D00F1DEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78AA335D1714BB1D00F1DEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78AA335F1714BB1D00F1DEC1 /* Omnimancer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Omnimancer-Prefix.pch"; sourceTree = "<group>"; };
+		78AA33601714BB1D00F1DEC1 /* OMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMAppDelegate.h; sourceTree = "<group>"; };
+		78AA33611714BB1D00F1DEC1 /* OMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMAppDelegate.m; sourceTree = "<group>"; };
+		78AA33631714BB1D00F1DEC1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		78AA33651714BB1D00F1DEC1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		78AA33671714BB1D00F1DEC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		78AA336A1714BB1D00F1DEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		78AA336D1714BB1D00F1DEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		78AA336F1714BB1D00F1DEC1 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		78AA33711714BB1D00F1DEC1 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		78AA33731714BB1D00F1DEC1 /* OMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMViewController.h; sourceTree = "<group>"; };
+		78AA33741714BB1D00F1DEC1 /* OMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMViewController.m; sourceTree = "<group>"; };
+		78AA337B1714BB1D00F1DEC1 /* OmnimancerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmnimancerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AA337C1714BB1D00F1DEC1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		78AA33841714BB1D00F1DEC1 /* OmnimancerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OmnimancerTests-Info.plist"; sourceTree = "<group>"; };
+		78AA33861714BB1D00F1DEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78AA33881714BB1D00F1DEC1 /* OmnimancerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmnimancerTests.h; sourceTree = "<group>"; };
+		78AA33891714BB1D00F1DEC1 /* OmnimancerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmnimancerTests.m; sourceTree = "<group>"; };
+		78AA33941714BF8F00F1DEC1 /* OMBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMBox.h; sourceTree = "<group>"; };
+		78AA33951714BF8F00F1DEC1 /* OMBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMBox.m; sourceTree = "<group>"; };
+		78AA33971714C05D00F1DEC1 /* OMShard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMShard.h; sourceTree = "<group>"; };
+		78AA33981714C05D00F1DEC1 /* OMShard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMShard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78AA33471714BB1D00F1DEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA334E1714BB1D00F1DEC1 /* UIKit.framework in Frameworks */,
+				78AA33501714BB1D00F1DEC1 /* Foundation.framework in Frameworks */,
+				78AA33521714BB1D00F1DEC1 /* CoreGraphics.framework in Frameworks */,
+				78AA33541714BB1D00F1DEC1 /* GLKit.framework in Frameworks */,
+				78AA33561714BB1D00F1DEC1 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78AA33771714BB1D00F1DEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA337D1714BB1D00F1DEC1 /* SenTestingKit.framework in Frameworks */,
+				78AA337E1714BB1D00F1DEC1 /* UIKit.framework in Frameworks */,
+				78AA337F1714BB1D00F1DEC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78AA33411714BB1D00F1DEC1 = {
+			isa = PBXGroup;
+			children = (
+				78AA33571714BB1D00F1DEC1 /* Omnimancer */,
+				78AA33821714BB1D00F1DEC1 /* OmnimancerTests */,
+				78AA334C1714BB1D00F1DEC1 /* Frameworks */,
+				78AA334B1714BB1D00F1DEC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78AA334B1714BB1D00F1DEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78AA334A1714BB1D00F1DEC1 /* Omnimancer.app */,
+				78AA337B1714BB1D00F1DEC1 /* OmnimancerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78AA334C1714BB1D00F1DEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78AA334D1714BB1D00F1DEC1 /* UIKit.framework */,
+				78AA334F1714BB1D00F1DEC1 /* Foundation.framework */,
+				78AA33511714BB1D00F1DEC1 /* CoreGraphics.framework */,
+				78AA33531714BB1D00F1DEC1 /* GLKit.framework */,
+				78AA33551714BB1D00F1DEC1 /* OpenGLES.framework */,
+				78AA337C1714BB1D00F1DEC1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78AA33571714BB1D00F1DEC1 /* Omnimancer */ = {
+			isa = PBXGroup;
+			children = (
+				78AA33601714BB1D00F1DEC1 /* OMAppDelegate.h */,
+				78AA33611714BB1D00F1DEC1 /* OMAppDelegate.m */,
+				78AA33691714BB1D00F1DEC1 /* MainStoryboard_iPhone.storyboard */,
+				78AA336C1714BB1D00F1DEC1 /* MainStoryboard_iPad.storyboard */,
+				78AA336F1714BB1D00F1DEC1 /* Shader.fsh */,
+				78AA33711714BB1D00F1DEC1 /* Shader.vsh */,
+				78AA33731714BB1D00F1DEC1 /* OMViewController.h */,
+				78AA33741714BB1D00F1DEC1 /* OMViewController.m */,
+				78AA33931714BF8300F1DEC1 /* Data */,
+				78AA33581714BB1D00F1DEC1 /* Supporting Files */,
+			);
+			path = Omnimancer;
+			sourceTree = "<group>";
+		};
+		78AA33581714BB1D00F1DEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78AA33591714BB1D00F1DEC1 /* Omnimancer-Info.plist */,
+				78AA335A1714BB1D00F1DEC1 /* InfoPlist.strings */,
+				78AA335D1714BB1D00F1DEC1 /* main.m */,
+				78AA335F1714BB1D00F1DEC1 /* Omnimancer-Prefix.pch */,
+				78AA33631714BB1D00F1DEC1 /* Default.png */,
+				78AA33651714BB1D00F1DEC1 /* Default@2x.png */,
+				78AA33671714BB1D00F1DEC1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78AA33821714BB1D00F1DEC1 /* OmnimancerTests */ = {
+			isa = PBXGroup;
+			children = (
+				78AA33881714BB1D00F1DEC1 /* OmnimancerTests.h */,
+				78AA33891714BB1D00F1DEC1 /* OmnimancerTests.m */,
+				78AA33831714BB1D00F1DEC1 /* Supporting Files */,
+			);
+			path = OmnimancerTests;
+			sourceTree = "<group>";
+		};
+		78AA33831714BB1D00F1DEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78AA33841714BB1D00F1DEC1 /* OmnimancerTests-Info.plist */,
+				78AA33851714BB1D00F1DEC1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78AA33931714BF8300F1DEC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				78AA33941714BF8F00F1DEC1 /* OMBox.h */,
+				78AA33951714BF8F00F1DEC1 /* OMBox.m */,
+				78AA33971714C05D00F1DEC1 /* OMShard.h */,
+				78AA33981714C05D00F1DEC1 /* OMShard.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78AA33491714BB1D00F1DEC1 /* Omnimancer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78AA338D1714BB1D00F1DEC1 /* Build configuration list for PBXNativeTarget "Omnimancer" */;
+			buildPhases = (
+				78AA33461714BB1D00F1DEC1 /* Sources */,
+				78AA33471714BB1D00F1DEC1 /* Frameworks */,
+				78AA33481714BB1D00F1DEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Omnimancer;
+			productName = Omnimancer;
+			productReference = 78AA334A1714BB1D00F1DEC1 /* Omnimancer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78AA337A1714BB1D00F1DEC1 /* OmnimancerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78AA33901714BB1D00F1DEC1 /* Build configuration list for PBXNativeTarget "OmnimancerTests" */;
+			buildPhases = (
+				78AA33761714BB1D00F1DEC1 /* Sources */,
+				78AA33771714BB1D00F1DEC1 /* Frameworks */,
+				78AA33781714BB1D00F1DEC1 /* Resources */,
+				78AA33791714BB1D00F1DEC1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78AA33811714BB1D00F1DEC1 /* PBXTargetDependency */,
+			);
+			name = OmnimancerTests;
+			productName = OmnimancerTests;
+			productReference = 78AA337B1714BB1D00F1DEC1 /* OmnimancerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78AA33421714BB1D00F1DEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Sean Hess";
+			};
+			buildConfigurationList = 78AA33451714BB1D00F1DEC1 /* Build configuration list for PBXProject "Omnimancer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 78AA33411714BB1D00F1DEC1;
+			productRefGroup = 78AA334B1714BB1D00F1DEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78AA33491714BB1D00F1DEC1 /* Omnimancer */,
+				78AA337A1714BB1D00F1DEC1 /* OmnimancerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78AA33481714BB1D00F1DEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA335C1714BB1D00F1DEC1 /* InfoPlist.strings in Resources */,
+				78AA33641714BB1D00F1DEC1 /* Default.png in Resources */,
+				78AA33661714BB1D00F1DEC1 /* Default@2x.png in Resources */,
+				78AA33681714BB1D00F1DEC1 /* Default-568h@2x.png in Resources */,
+				78AA336B1714BB1D00F1DEC1 /* MainStoryboard_iPhone.storyboard in Resources */,
+				78AA336E1714BB1D00F1DEC1 /* MainStoryboard_iPad.storyboard in Resources */,
+				78AA33701714BB1D00F1DEC1 /* Shader.fsh in Resources */,
+				78AA33721714BB1D00F1DEC1 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78AA33781714BB1D00F1DEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA33871714BB1D00F1DEC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78AA33791714BB1D00F1DEC1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78AA33461714BB1D00F1DEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA335E1714BB1D00F1DEC1 /* main.m in Sources */,
+				78AA33621714BB1D00F1DEC1 /* OMAppDelegate.m in Sources */,
+				78AA33751714BB1D00F1DEC1 /* OMViewController.m in Sources */,
+				78AA33961714BF8F00F1DEC1 /* OMBox.m in Sources */,
+				78AA33991714C05D00F1DEC1 /* OMShard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78AA33761714BB1D00F1DEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AA338A1714BB1D00F1DEC1 /* OmnimancerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78AA33811714BB1D00F1DEC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78AA33491714BB1D00F1DEC1 /* Omnimancer */;
+			targetProxy = 78AA33801714BB1D00F1DEC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78AA335A1714BB1D00F1DEC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AA335B1714BB1D00F1DEC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		78AA33691714BB1D00F1DEC1 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AA336A1714BB1D00F1DEC1 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		78AA336C1714BB1D00F1DEC1 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AA336D1714BB1D00F1DEC1 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		78AA33851714BB1D00F1DEC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AA33861714BB1D00F1DEC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78AA338B1714BB1D00F1DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78AA338C1714BB1D00F1DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78AA338E1714BB1D00F1DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omnimancer/Omnimancer-Prefix.pch";
+				INFOPLIST_FILE = "Omnimancer/Omnimancer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		78AA338F1714BB1D00F1DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omnimancer/Omnimancer-Prefix.pch";
+				INFOPLIST_FILE = "Omnimancer/Omnimancer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		78AA33911714BB1D00F1DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Omnimancer.app/Omnimancer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omnimancer/Omnimancer-Prefix.pch";
+				INFOPLIST_FILE = "OmnimancerTests/OmnimancerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		78AA33921714BB1D00F1DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Omnimancer.app/Omnimancer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omnimancer/Omnimancer-Prefix.pch";
+				INFOPLIST_FILE = "OmnimancerTests/OmnimancerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78AA33451714BB1D00F1DEC1 /* Build configuration list for PBXProject "Omnimancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AA338B1714BB1D00F1DEC1 /* Debug */,
+				78AA338C1714BB1D00F1DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78AA338D1714BB1D00F1DEC1 /* Build configuration list for PBXNativeTarget "Omnimancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AA338E1714BB1D00F1DEC1 /* Debug */,
+				78AA338F1714BB1D00F1DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		78AA33901714BB1D00F1DEC1 /* Build configuration list for PBXNativeTarget "OmnimancerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AA33911714BB1D00F1DEC1 /* Debug */,
+				78AA33921714BB1D00F1DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78AA33421714BB1D00F1DEC1 /* Project object */;
+}
