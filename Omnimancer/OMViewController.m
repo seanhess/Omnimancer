@@ -85,6 +85,8 @@ GLfloat gCubeVertexData[216] =
 // Do boxes know their position in the grid
 // No, then don't. Why would they? Because it's easier to keep track that way
 
+// I need to understand the shaders before I can make them have a color, etc
+
 @interface OMViewController () {
     GLuint _program;
     
@@ -170,12 +172,16 @@ GLfloat gCubeVertexData[216] =
     // create the context
     [EAGLContext setCurrentContext:self.context];
     // load the shaders
-    [self loadShaders];
+//    [self loadShaders];
     
     // make the effect (is used for everything here)
     self.effect = [[GLKBaseEffect alloc] init];
+    
+    self.effect.useConstantColor = YES;
+    self.effect.constantColor = GLKVector4Make(1, 0, 0, 1);
+    
     self.effect.light0.enabled = GL_TRUE;
-    self.effect.light0.diffuseColor = GLKVector4Make(1.0f, 0.4f, 0.4f, 1.0f);
+    self.effect.light0.diffuseColor = GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f);
 //    self.effect.light0.spotDirection = GLKVector3Make(1.0, 1.0, -1.0);
     self.effect.light0.position = GLKVector4Make(-10.0, 0.0, 10.0, 0.0);
     
@@ -194,16 +200,17 @@ GLfloat gCubeVertexData[216] =
     
     // bind vertexBuffer to gCubeVertexData
     // you can only put this in setupGL because it is static?
+    // yes, can use GL_DYNAMIC_DRAW if the data in the buffer changes frequently
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
     
     // this is how you read that buffer / array thing
     glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float), BUFFER_OFFSET(0));
     
     glEnableVertexAttribArray(GLKVertexAttribNormal);
-    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(12));
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float), BUFFER_OFFSET(3*sizeof(float)));
     
     glBindVertexArrayOES(0);
 }
@@ -302,6 +309,8 @@ GLfloat gCubeVertexData[216] =
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     glBindVertexArrayOES(_vertexArray);
+    
+//    glUseProgram(_program);
     
 //    GLKMatrix4 baseModelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 1.0f, -4.0f);
 //    baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, GLKMathDegreesToRadians(45), 0.0, 0.0, 1.0);
